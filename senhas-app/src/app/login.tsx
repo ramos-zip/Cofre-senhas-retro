@@ -1,4 +1,5 @@
 import { useRouter } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { colors, commonStyles, fontMono } from '../lib/styles';
@@ -22,9 +23,11 @@ export default function Login() {
   return (
     <View style={styles.screen}>
       <View style={styles.panel}>
-        <Text style={styles.protocol}>AUTH://LOCAL</Text>
-        <Text style={commonStyles.title}>ACESSO AO COFRE</Text>
-        <Text style={styles.description}>Informe sua chave de acesso.</Text>
+        <View style={styles.iconBox}>
+          <Ionicons name="shield-half-sharp" size={38} color={colors.green} />
+        </View>
+        <Text style={commonStyles.title}>ACESSAR O COFRE</Text>
+        <Text style={styles.description}>Informe sua senha de acesso.</Text>
 
         <Text style={commonStyles.label}>Senha de acesso</Text>
         <TextInput
@@ -78,4 +81,14 @@ const styles = StyleSheet.create({
     marginTop: 8,
     marginBottom: 14,
   },
+  iconBox: {
+    width: 96,
+    height: 96,
+    borderWidth: 1,
+    borderColor: colors.green,
+    backgroundColor: colors.panel,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center'
+  }
 });

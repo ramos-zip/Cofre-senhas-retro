@@ -59,14 +59,13 @@ export default function AccountForm() {
       <Stack.Screen options={{ title: editing ? 'EDITAR CONTA' : 'NOVA CONTA' }} />
 
       <View style={styles.formContainer}>
-        <Text style={styles.protocol}>RECORD://ACCOUNT</Text>
 
         <Pressable onPress={pickImage} style={styles.imageButton}>
           {image ? (
             <Image source={{ uri: image }} style={styles.accountImage} />
           ) : (
             <View style={styles.imagePlaceholder}>
-              <Ionicons name="camera-outline" size={30} color={colors.green} />
+              <Ionicons name="image-sharp" size={50} color={colors.green} />
             </View>
           )}
 
@@ -75,13 +74,13 @@ export default function AccountForm() {
           </Text>
         </Pressable>
 
-        <Text style={commonStyles.label}>Site</Text>
+        <Text style={commonStyles.label}>Serviço</Text>
         <TextInput
           style={commonStyles.input}
           value={site}
           onChangeText={setSite}
           autoCapitalize="none"
-          placeholder="ex.: github.com"
+          placeholder="ex: github.com"
           placeholderTextColor={colors.muted}
         />
 

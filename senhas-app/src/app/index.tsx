@@ -9,16 +9,16 @@ export default function Welcome() {
   return (
     <View style={styles.screen}>
       <View style={styles.content}>
-        <Text style={styles.systemText}>PERSONAL SECURITY SYSTEM // V4</Text>
+        <Text style={styles.systemText}>KAUÃ E ENZO</Text>
         <View style={styles.divider} />
 
         <View style={styles.iconBox}>
-          <Ionicons name="shield-checkmark" size={58} color={colors.green} />
+          <Ionicons name="shield-half-sharp" size={58} color={colors.green} />
         </View>
 
         <Text style={styles.title}>MEU COFRE</Text>
         <Text style={styles.subtitle}>
-          Guarde e consulte suas senhas em um só lugar.
+          Proteção de ponta para suas senhas, na palma da sua mão.
         </Text>
 
         <View style={styles.statusBox}>

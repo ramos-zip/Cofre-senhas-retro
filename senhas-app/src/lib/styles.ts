@@ -9,16 +9,16 @@ export const fontMono = Platform.select({
 
 export const colors = {
   black: '#030504',
-  background: '#060a07',
-  panel: '#0b120d',
-  panelAlt: '#101a13',
-  green: '#58ff84',
-  greenStrong: '#21e65d',
-  greenDim: '#6aa978',
-  greenDark: '#163c22',
+  background: '#06080a',
+  panel: '#322e3b63',
+  panelAlt: '#10121a',
+  green: '#58d8ff',
+  greenStrong: '#21c8e6',
+  greenDim: '#2acfcf',
+  greenDark: '#19163c',
   text: '#d8ffe1',
-  muted: '#789581',
-  line: '#245b32',
+  muted: '#788295',
+  line: '#242c5b',
   danger: '#ff5d5d',
 };
 
@@ -76,7 +76,7 @@ export const commonStyles = StyleSheet.create({
     textTransform: 'uppercase',
   },
   dangerButton: {
-    backgroundColor: '#2a0d0d',
+    backgroundColor: '#501212',
     borderColor: colors.danger,
   },
   error: {

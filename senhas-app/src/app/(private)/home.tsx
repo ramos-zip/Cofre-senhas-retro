@@ -31,7 +31,7 @@ export default function Home() {
         keyExtractor={(account) => account.id}
         contentContainerStyle={styles.list}
         ListEmptyComponent={
-          <Text style={styles.emptyText}>// NENHUMA CONTA CADASTRADA</Text>
+          <Text style={styles.emptyText}>NENHUMA CONTA CADASTRADA</Text>
         }
         renderItem={({ item }) => (
           <Pressable
@@ -42,14 +42,14 @@ export default function Home() {
               <Image source={{ uri: item.image }} style={styles.avatar} />
             ) : (
               <View style={styles.avatar}>
-                <Ionicons name="globe-outline" size={24} color={colors.green} />
+                <Ionicons name="key-sharp" size={24} color={colors.green} />
               </View>
             )}
 
             <View style={styles.accountInfo}>
               <Text style={styles.site}>{item.site}</Text>
               <Text style={styles.username}>{item.username}</Text>
-              <Text style={styles.hiddenPassword}>••••••••</Text>
+              <Text style={styles.hiddenPassword}>********</Text>
             </View>
 
             <Ionicons name="chevron-forward" size={20} color={colors.green} />
