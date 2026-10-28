@@ -1,4 +1,5 @@
 import { Stack, useRouter } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
 import { useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { colors, commonStyles, fontMono } from '../../lib/styles';
@@ -46,10 +47,10 @@ export default function Profile() {
   return (
     <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
       <Stack.Screen options={{ title: 'DADOS PESSOAIS' }} />
-
-      <Text style={styles.protocol}>USER://PROFILE</Text>
-
+      
+      <View style={styles.iconBox}><Ionicons name="person-circle-outline" size={85} color={colors.green} /></View>
       <View style={styles.panel}>
+        <Text style={styles.sectionTitle}>CADASTRAL</Text>
         <Text style={commonStyles.label}>Nome</Text>
         <TextInput
           style={commonStyles.input}
@@ -152,5 +153,12 @@ const styles = StyleSheet.create({
   dangerText: {
     ...commonStyles.buttonText,
     color: colors.danger,
+  },
+  iconBox: {
+    width: 96,
+    height: 96,
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
   },
 });

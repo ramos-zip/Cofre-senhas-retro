@@ -9,6 +9,7 @@ export default function Welcome() {
   return (
     <View style={styles.screen}>
       <View style={styles.content}>
+        
         <Text style={styles.systemText}>KAUÃ E ENZO</Text>
         <View style={styles.divider} />
 
@@ -21,13 +22,12 @@ export default function Welcome() {
           Proteção de ponta para suas senhas, na palma da sua mão.
         </Text>
 
-        <View style={styles.statusBox}>
-          <Text style={styles.statusText}>STATUS: SISTEMA PRONTO</Text>
-        </View>
-
         <Pressable style={styles.button} onPress={() => router.push('/login')}>
           <Text style={commonStyles.buttonText}>[ ENTRAR ]</Text>
         </Pressable>
+        <View style={styles.statusBox}>
+          <Text style={styles.statusText}>STATUS: SISTEMA PRONTO</Text>
+        </View>
       </View>
     </View>
   );
